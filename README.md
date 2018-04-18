@@ -65,7 +65,7 @@ When I trying to edit the information after changing the value of csrd_token, re
 
 ## Bonus Objective 2: Build on Objective #4 (Cross-Site Scripting)
 
-<img src='bonus.gif' title='Insecure Direct Object Reference' width='' alt='' />
+<img src='bonus-objective2.gif' title='Insecure Direct Object Reference' width='' alt='' />
 
 In green section, using ```<script>document.location="https://www.google.com"</script>``` in Feedback in Contact Us, then go to the feedback section in Staff Menu, it should direct the page to google. Additionally, type ``` <script>alert(document.cookie)</script>``` may read the cookie data and type ``` <script>document.cookie="username=abcde"</script>```may set the cookie data.
 
