@@ -60,12 +60,12 @@ Vulnerability #2: Cross-Site Request Forgery
 
 <img src='red2.gif' title='Cross-Site Request Forgery' width='' alt='' />
 
-When I trying to edit the information after changing the value of csrd_token, red section is still able to make a change, while the other two sections show "Error: invalid request" after I changed their csrd_token. 
+When I trying to edit the information after changing the value of csrd_token, red section is still able to make a change, while the other two sections show "Error: invalid request" after I changed its csrd_token. 
 
 
 ## Bonus Objective 2: Build on Objective #4 (Cross-Site Scripting)
 
-<img src='bonus-objective2.gif' title='Insecure Direct Object Reference' width='' alt='' />
+<img src='bonus-objective2.gif' title='Cross-Site Scripting' width='' alt='' />
 
 In green section, using ```<script>document.location="https://www.google.com"</script>``` in Feedback in Contact Us, then go to the feedback section in Staff Menu, it should direct the page to google. Additionally, type ``` <script>alert(document.cookie)</script>``` may read the cookie data and type ``` <script>document.cookie="username=abcde"</script>```may set the cookie data.
 
