@@ -67,7 +67,7 @@ When I trying to edit the information after changing the value of csrd_token, re
 
 <img src='bonus-objective2.gif' title='Cross-Site Scripting' width='' alt='' />
 
-In green section, using ```<script>document.location="https://www.google.com"</script>``` in Feedback in Contact Us, then go to the feedback section in Staff Menu, it should direct the page to google. Additionally, type ``` <script>alert(document.cookie)</script>``` may read the cookie data and type ``` <script>document.cookie="username=abcde"</script>```may set the cookie data.
+In green section, I use ```<script>document.location="https://www.google.com"</script>``` in Feedback in Contact Us, then go to the feedback section in Staff Menu, it should direct the page to google. Additionally, type ``` <script>alert(document.cookie)</script>``` may read the cookie data and type ``` <script>document.cookie="username=abcde"</script>```may set the cookie data.
 
 ## Notes
 
